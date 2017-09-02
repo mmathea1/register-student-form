@@ -8,10 +8,7 @@ import java.util.List;
 
 import play.data.validation.ValidationError;
 
-/**
- * @author Mingina
- *
- */
+
 public class StudentFormData {
 	public String name = "";
 	public String password = "";
