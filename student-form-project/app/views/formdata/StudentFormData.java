@@ -6,6 +6,11 @@ package views.formdata;
 import java.util.ArrayList;
 import java.util.List;
 
+import models.Major;
+import models.Hobby;
+import models.GradeLevel;
+import models.GradePointAverage;
+
 import play.data.validation.ValidationError;
 
 
