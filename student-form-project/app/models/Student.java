@@ -140,8 +140,8 @@ public class Student {
 	//Fake database
 	private static List<Student> allStudents = new ArrayList<>();
 	static{
-		allStudents.add(new Student(1L, "Mingina Mathea", "mypassword", GradeLevel.findLevel("First year"), GradePointAverage.findGPA(2.3)));
-		allStudents.add(new Student(4L, "Ben Mwangi", "mypassword", GradeLevel.findLevel("Fourth year"), GradePointAverage.findGPA(3.7)));
+		allStudents.add(new Student(1L, "Mingina Mathea", "mypassword", GradeLevel.findLevel("First year"), GradePointAverage.findGPA("2.3")));
+		allStudents.add(new Student(4L, "Ben Mwangi", "mypassword", GradeLevel.findLevel("Fourth year"), GradePointAverage.findGPA("3.7")));
 		
 		getById(4L).addHobby(Hobby.findHobby("Biking"));
 		getById(4L).addHobby(Hobby.findHobby("Hiking"));
@@ -149,7 +149,7 @@ public class Student {
 		getById(4L).addMajor(Major.findMajor("Electrical Engineering"));
 		
 		//Invalid student: password too short
-		allStudents.add(new Student(3L, "Rose Flower", "pass", GradeLevel.findLevel("Second Year"), GradePointAverage.findGPA(3.5)));
+		allStudents.add(new Student(3L, "Rose Flower", "pass", GradeLevel.findLevel("Second Year"), GradePointAverage.findGPA("3.5")));
 	}
 	
 	public static Student getById(long id){
