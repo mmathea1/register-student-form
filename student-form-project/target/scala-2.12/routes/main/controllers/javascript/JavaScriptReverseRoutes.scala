@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/register-student-form/student-form-project/conf/routes
-// @DATE:Thu Aug 31 17:07:05 EAT 2017
+// @DATE:Mon Sep 04 16:38:04 EAT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -20,19 +20,29 @@ package controllers.javascript {
     }
 
   
-    // @LINE:6
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.index",
+    // @LINE:7
+    def postIndex: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.postIndex",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + """"})
+          return _wA({method:"POST", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
+    // @LINE:6
+    def getIndex: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.getIndex",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + """" + _qS([(id0 == null ? null : (""" + implicitly[play.api.mvc.QueryStringBindable[Long]].javascriptUnbind + """)("id", id0))])})
         }
       """
     )
   
   }
 
-  // @LINE:9
+  // @LINE:10
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -40,7 +50,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:9
+    // @LINE:10
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

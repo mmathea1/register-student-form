@@ -1,0 +1,58 @@
+@(studentForm: Form[views.formdata.StudentFormData],
+hobbies: Map[String, Boolean],
+levels: List[String],
+gpa: Map[String, Boolean],
+majors: Map[String, Boolean])
+
+@import views.html.bootstrap3._
+
+<fieldset>
+	<!--Header-->
+	<div id="legend">
+		<legend>Student Data</legend>
+	</div>
+	
+	<!-- Name-->
+	@text(studentForm("name"),
+				label = "Name",
+				placeholder = "My Name",
+				help = "Please enter your first and last name. (required)")
+				
+	<!--Password-->
+	@password(studentForm("password"),
+				label = "Password",
+				placeholder = "",
+				help = "Password must be five or more characters. (required)")
+				
+	<!--Hobbies-->
+	@checkboxes(studentForm("hobbies"),
+				label = "Hobbies",
+				checkboxMap = hobbies,
+				help = "Check zero or more hobbies. (optional)")
+	
+	<!--Grade Level-->
+	@radiobuttons(studentForm("level"),
+					label = "Year",
+					buttonNameList = levels,
+					help = "Select your year. (required)")
+	
+	<!--GPA-->
+	@select(studentForm("gpa"),
+				label = "GPA",
+				optionMap = gpa,
+				isMultiple = false,
+				help = "Select your GPA. (required)")
+				
+	<!--Majors-->
+	@select(studentForm("majors"),
+				label = "Majors",
+				optionMap = majors,
+				isMultiple = true,
+				help = "Select zero or more majors. (optional)")
+<div class = "form-group">
+	<div class= "col-sm-offset-2 col-sm-10">
+		<button id="submit" type="submit" value="Submit" class="btn btn-primary">Submit</button>
+		<button id ="cancel" class="btn cancel">Cancel</button>		
+	</div>
+</div>
+</fieldset>
