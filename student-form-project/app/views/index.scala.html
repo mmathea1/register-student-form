@@ -4,6 +4,30 @@ levels: List[String],
 gpa: Map[String, Boolean],
 majors: Map[String, Boolean])
 
-@main("Welcome to Play") {
+@import helper._
+
+@main("Index") {
+  <div class = "container">
+  <div class = "well">
+  	@form(routes.HomeController.postIndex(), 'class -> "form-horizonal"){
+  		@fieldset(studentForm, hobbies, levels, gpa, majors)
+  	}
+  </div>
   
+  	@if(flash.containsKey("success")){
+  	<div class ="well">
+  		<div id="success-message" class="text-success">
+  			@flash.get("success")
+  		</div>
+  	</div>	
+  	}
+  	
+  	@if(flash.containsKey("error")){
+  		<div class = "well">
+  			<div id ="error-message" class ="text-danger">
+  				@flash.get("error")
+  			</div>
+  		</div>
+  	}
+  </div>
 }
