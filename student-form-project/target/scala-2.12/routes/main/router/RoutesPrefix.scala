@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/register-student-form/student-form-project/conf/routes
-// @DATE:Thu Aug 31 17:07:05 EAT 2017
+// @DATE:Tue Sep 05 14:08:24 EAT 2017
 
 
 package router {

@@ -41,15 +41,41 @@ Seq[Any](format.raw/*7.32*/("""
 <html lang="en">
     <head>
         """),format.raw/*12.62*/("""
-        """),format.raw/*13.9*/("""<title>"""),_display_(/*13.17*/title),format.raw/*13.22*/("""</title>
-        <link rel="stylesheet" media="screen" href=""""),_display_(/*14.54*/routes/*14.60*/.Assets.versioned("stylesheets/main.css")),format.raw/*14.101*/("""">
-        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*15.59*/routes/*15.65*/.Assets.versioned("images/favicon.png")),format.raw/*15.104*/("""">
+        """),format.raw/*13.9*/("""<title>Student registration form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" media="screen" href=""""),_display_(/*16.54*/routes/*16.60*/.Assets.versioned("stylesheets/main.css")),format.raw/*16.101*/("""">
+        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*17.59*/routes/*17.65*/.Assets.versioned("images/favicon.png")),format.raw/*17.104*/("""">
+              <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+      <![endif]-->
     </head>
     <body>
-        """),format.raw/*19.32*/("""
-        """),_display_(/*20.10*/content),format.raw/*20.17*/("""
+    <div class = "navbar navbar-inverse" role ="navigation">
+    <div class= "container">
+    <div class = "navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <!--  Display three horizontal lines when navbar collapsed. -->
+          <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Student registration</a>
+    </div>
+    </div>
+    </div>
+        """),format.raw/*37.32*/("""
+         """),_display_(/*38.11*/content),format.raw/*38.18*/("""
+    """),format.raw/*39.5*/("""<script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-        """),format.raw/*22.9*/("""<script src=""""),_display_(/*22.23*/routes/*22.29*/.Assets.versioned("javascripts/main.js")),format.raw/*22.69*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*42.23*/routes/*42.29*/.Assets.versioned("javascripts/main.js")),format.raw/*42.69*/("""" type="text/javascript"></script>
+         <!-- Enable tooltips. Used primarily to validate that JQuery + Bootstrap JS are loaded. Remove this script if you don't want tooltips. -->
+    <script type="text/javascript">
+    jQuery(function ($) """),format.raw/*45.25*/("""{"""),format.raw/*45.26*/("""
+        """),format.raw/*46.9*/("""$("[rel='tooltip']").tooltip()
+    """),format.raw/*47.5*/("""}"""),format.raw/*47.6*/(""");
+    </script>
     </body>
 </html>
 """))
@@ -68,11 +94,11 @@ Seq[Any](format.raw/*7.32*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Thu Aug 31 17:07:07 EAT 2017
+                  DATE: Thu Aug 31 18:12:02 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/register-student-form/student-form-project/app/views/main.scala.html
-                  HASH: 1c6ff78675beee071e369b305cd8e888a02716d8
-                  MATRIX: 1211->266|1336->296|1366->300|1449->408|1486->418|1521->426|1547->431|1637->494|1652->500|1715->541|1804->603|1819->609|1880->648|1945->776|1983->787|2011->794|2050->806|2091->820|2106->826|2167->866
-                  LINES: 33->7|38->7|40->9|43->12|44->13|44->13|44->13|45->14|45->14|45->14|46->15|46->15|46->15|49->19|50->20|50->20|52->22|52->22|52->22|52->22
+                  HASH: d6503a90d820d287742e083c8b45bbfb0a2fadaa
+                  MATRIX: 1211->266|1336->296|1366->300|1449->408|1486->418|1794->699|1809->705|1872->746|1961->808|1976->814|2037->853|2981->1860|3020->1872|3048->1879|3081->1885|3290->2067|3305->2073|3366->2113|3640->2359|3669->2360|3706->2370|3769->2406|3797->2407
+                  LINES: 33->7|38->7|40->9|43->12|44->13|47->16|47->16|47->16|48->17|48->17|48->17|67->37|68->38|68->38|69->39|72->42|72->42|72->42|75->45|75->45|76->46|77->47|77->47
                   -- GENERATED --
               */
           
