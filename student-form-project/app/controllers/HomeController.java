@@ -8,7 +8,7 @@ import models.Student;
 import play.data.Form;
 import play.mvc.*;
 import views.formdata.StudentFormData;
-import views.html.index;
+
 
 /**
  * This controller contains an action to handle HTTP requests
