@@ -28,3 +28,5 @@ so clearing cookies may resolve this error message.
 2017-09-05 22:38:59,660 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-15 - [CSRF] Check failed with NoTokenInBody for /
 2017-09-05 22:40:36,832 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-26 - [CSRF] Check failed because no or invalid token found in body for /
 2017-09-05 22:40:36,833 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-26 - [CSRF] Check failed with NoTokenInBody for /
+2017-09-05 22:49:02,024 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-31 - [CSRF] Check failed because no or invalid token found in body for /
+2017-09-05 22:49:02,026 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-31 - [CSRF] Check failed with NoTokenInBody for /
